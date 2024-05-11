@@ -1,4 +1,4 @@
-name: Lint
+name: Deployment pipeline
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  linting_pipeline:
+  lint:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
