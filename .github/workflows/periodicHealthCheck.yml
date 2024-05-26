@@ -2,7 +2,10 @@ name: periodic health check
 
 on:
   schedule:
-    - cron: "20 11 * * *"
+    - cron: "0 13 * * *"
+  push:
+    branches:
+      - main
 
 jobs:
   echoCommits:
